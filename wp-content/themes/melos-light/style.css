@@ -1,0 +1,467 @@
+/*
+Theme Name: Melos Light
+Text Domain: melos-light
+Template: melos
+Version: 1.0.7
+Requires at least: 4.7
+Tested up to: 5.6.0
+Requires PHP: 5.6.0
+Description: Melos Light is the free version of the multi-purpose professional theme (Melos Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout. Compatible with WooCommerce, WPML, Polylang, Flat Parallax Slider, Photo Gallery and Travel Map, Elementor, Page Builder, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. It's a perfect theme for small businesses (restaurants, wedding planners, sport/medical shops), startups, corporate businesses, online agencies and firms, portfolios, ecommerce (WooCommerce), and freelancers.
+Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-header, custom-menu, full-width-template, theme-options, threaded-comments, editor-style, featured-images, featured-image-header, post-formats, sticky-post, translation-ready, flexible-header, custom-background, grid-layout, footer-widgets, blog, e-commerce, portfolio, rtl-language-support
+Author: Think Up Themes
+Author URI: https://www.thinkupthemes.com
+Theme URI: https://www.thinkupthemes.com/free/melos/
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Basic Style */
+#body-core {
+	background-color: #fff;
+}
+
+/* Prehader Style */
+#pre-header {
+	background-color: #f7f7f7;
+}
+#pre-header .header-links li a {
+	color: #999;
+	background-color: #f7f7f7;
+}
+#pre-header .header-links .menu-hover > a,
+#pre-header .header-links > ul > li > a:hover {
+	color: #999;
+	background: #fbfbfb;
+}
+#pre-header .header-links > ul > li > a {
+	border-left: none;
+}
+#pre-header .header-links > ul > li:last-child > a {
+	border-right: none;
+}
+#pre-header .header-links .sub-menu {
+	border-top: none;
+}
+#pre-header .header-links .sub-menu a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#pre-header .header-links .sub-menu a:hover {
+	color: #999;
+	background: #fbfbfb;
+}
+#pre-header .main-navigation .sub-menu .sub-menu {
+	top: 0;
+}
+
+.pre-header-style2 #pre-header,
+.pre-header-style2 #pre-header .header-links li a {
+	background: #fff;
+}
+.pre-header-style2 #pre-header {
+	border-bottom: 1px solid #eee;
+}
+.pre-header-style2 #pre-header-social li a {
+	border-left: 1px solid #eee;
+}
+.pre-header-style2 #pre-header-social li:last-child a {
+	border-right: 1px solid #eee;
+}
+.pre-header-style2 #pre-header .header-links > ul > li > a {
+	border-left: 1px solid #eee;
+}
+.pre-header-style2 #pre-header .header-links > ul > li:last-child > a {
+	border-right: 1px solid #eee;
+}
+.pre-header-style2 #pre-header .header-links .sub-menu {
+	border: 1px solid #eee;
+}
+.pre-header-style2 #pre-header-search .search {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.pre-header-style2 #pre-header .main-navigation .sub-menu .sub-menu {
+	top: -1px;
+}
+
+#pre-header-social li a {
+	border-left: none;
+}
+#pre-header-social li:last-child a {
+	border-right: none;
+}
+
+#pre-header-search .search {
+	color: #999;
+	background: #fbfbfb;
+	border: none;
+}
+#pre-header-search.active .fa-search {
+	color: #999;
+}
+
+/* Header */
+#header .header-links > ul > li a,
+#header-sticky .header-links > ul > li a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#header .menu > li.menu-hover > a,
+#header .menu > li.current_page_item > a,
+#header .menu > li.current-menu-item > a,
+#header .menu > li.current-menu-ancestor > a,
+#header .menu > li > a:hover,
+#header-sticky .menu > li.menu-hover > a,
+#header-sticky .menu > li.current_page_item > a,
+#header-sticky .menu > li.current-menu-item > a,
+#header-sticky .menu > li.current-menu-ancestor > a,
+#header-sticky .menu > li > a:hover {
+	color: #1EAAF1;
+	background: none;
+}
+#header .header-links > ul > li.menu-parent > a:after,
+#header-sticky .header-links > ul > li.menu-parent > a:after {
+	font-size: 90%;
+}
+
+/* Intro & Outro Style */
+#introaction,
+#outroaction {
+	background: url(./images/backgrounds/intro-bg.png);
+	padding: 56px 10px 60px;
+}
+#introaction-core,
+#outroaction-core {
+	border: none;
+	margin: 0 auto;
+	padding: 0;
+	background: none;
+}
+.action-text h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-bottom: none;
+	position: relative;
+}
+.action-text h3::after {
+	content: '';
+	width: 60px;
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.action-teaser p {
+	color: #fff;
+}
+.action-link a {
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	border-radius: 20px;
+}
+.action-link a:hover {
+	background-color: #fff;
+	color: #1e1e1e;
+}
+
+/* Services Style */
+.services-builder.style1 {
+	padding: 0px;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.services-builder.style1 .iconmain {
+	background-color: #f7f7f7;
+	padding: 20px;
+	text-align: center;
+}
+.services-builder.style1 .iconimage {
+	padding: 0px;
+	margin-bottom: -7px;
+}
+.iconmain .iconurl a.themebutton,
+.iconmain .iconurl a.themebutton2 {
+	background-color: transparent;
+	border-radius: 20px;
+	border: 2px solid #1eaaf1;
+	color: #1eaaf1;
+	margin-bottom: -20px;
+	padding: 0px 18px 3px 18px;
+}
+.iconmain .iconurl {
+	margin-top: 0px!important;
+}
+.iconmain .iconurl a.themebutton:hover,
+.iconmain .iconurl a.themebutton2:hover {
+	background-color: #1eaaf1;
+	color: #fff;
+}
+
+/* Footer Style */
+#footer {
+	background-color: #fff;
+	border-top: 3px solid #1eaaf1;
+}
+#footer-core h3 {
+	color: #1e1e1e;
+	border-bottom: 1px solid #eee;
+}
+#footer .widget li a {
+	color: #4a4a4a;
+}
+#footer .widget li a:hover {
+	color: #1eaaf1;
+}
+#footer .widget li {
+	margin-bottom: 10px;
+}
+#footer .widget li:last-child {
+	margin-bottom: 0px;
+}
+#footer .widget li span {
+	color: #7a7a7a;
+	display: block;
+}
+#footer-core,
+#footer-core p {
+	color: #7a7a7a;
+}
+#sub-footer {
+	border-top: 1px solid #eee;
+}
+
+/* Page Heading Style */
+#intro {
+	background-image: url(./images/backgrounds/intro-bg.png);
+}
+
+/* Blog Post Style */
+.blog-style1-layout2 .blog-article .blog-title,
+.blog-style1-layout2 .blog-article .entry-meta > span.comment {
+	position: relative;
+	top: 0;
+	height: auto;
+}
+.blog-style1-layout2 .blog-article .blog-title {
+	padding: 0px;
+}
+.blog-style1 .blog-article .blog-title {
+	background: none;
+	box-shadow: none;
+	color: #1e1e1e;
+	border-bottom: 1px solid #eee;
+}
+.blog-article .entry-content {
+	padding: 0px;
+}
+.blog-article .entry-meta {
+	margin-top: 0;
+}
+.blog-article .entry-meta > span:before {
+	color: #1eaaf1;
+}
+.blog-style1 .blog-article .entry-meta > span.comment {
+	color: inherit;
+	right: 0;
+}
+.blog-article {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.blog-article .more-link a {
+	border: 2px solid #1eaaf1;
+	border-radius: 20px;
+	text-transform: uppercase;
+	color: #1eaaf1;
+	background: transparent;
+	padding: 4px 15px;
+	font-size: 13px;
+}
+.blog-article .more-link a:hover {
+	background-color: #1eaaf1;
+	color: #fff;
+}
+.blog-style1-layout2 .blog-article.format-gallery .blog-title {
+	top: 0px;
+}
+.blog-style1-layout2 .blog-article.format-nomedia .entry-content {
+	padding-top: 0px;
+}
+.blog-article.sticky {
+	background-color: transparent;
+}
+
+.blog-style1-layout2 .blog-article .entry-meta {
+	margin-top: 15px;
+}
+
+/* Pagination Style */
+.pag {
+	text-align: left;
+}
+.pag li a, .pag li span {
+	border-left: none;
+}
+.pag li a:hover {
+	color: #1eaaf1;
+	background-color: transparent;
+} 
+.pag li.current span {
+	border-radius: 50%;
+}
+
+/* Sidebar Style */
+#sidebar .widget {
+	padding: 0px;
+	border-top: none;
+}
+#sidebar input[type=text],
+#sidebar input[type=email],
+#sidebar input[type=password],
+#sidebar input[type=search],
+#sidebar select,
+#sidebar textarea {
+	outline: none;
+	border-radius: 20px;
+	background-color: #fff;
+}
+#sidebar h3.widget-title {
+	border-bottom: none;
+	position: relative;
+}
+#sidebar h3.widget-title::after {
+	width: 50px;
+	height: 3px;
+	background-color: #1eaaf1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+}
+#sidebar .widget_recent_entries span,
+#sidebar .widget_recent_comments span {
+	display: block;
+	font-weight: 700;
+	color: #aaa;
+}
+#sidebar .widget_recent_entries li,
+#sidebar .widget_recent_comments li {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+#sidebar .widget_recent_entries li:last-child,
+#sidebar .widget_recent_comments li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0px;
+}
+#sidebar .widget_meta li,
+#sidebar .widget_archive li,
+#sidebar .widget_categories li {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+}
+#sidebar .widget_meta li:last-child,
+#sidebar .widget_archive li:last-child,
+#sidebar .widget_categories li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+/* Single Post Syle */
+.single .entry-header,
+.single .entry-content {
+	margin: 0;
+}
+.single .post-thumb {
+	margin: 0;
+}
+.single .post-title {
+	background-color: #1eaaf1;
+	color: #fff;
+	padding: 15px 20px;
+}
+.single .entry-meta > span:before {
+	color: #1eaaf1;
+}
+.single .entry-meta {
+	padding: 15px 0px;
+	border-bottom: 1px solid #eee;
+}
+#body-core #main-core > article {
+	border-bottom: none;
+}
+#sharepost {
+	border-bottom: none;
+}
+#nav-above, #nav-below {
+	padding: 15px 0px;
+}
+.nav-previous a, .nav-next a {
+	border: 2px solid #1eaff1;
+	border-radius: 20px;
+	color: #1eaff1;
+}
+/* Commnents Style */
+#comments-title h3::after,
+#reply-title::after {
+	width: 50px;
+	height: 3px;
+	background-color: #1eaaf1;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	content: '';
+}
+#reply-title {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.themebutton,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border-radius: 20px;
+	border: 2px solid #1eaff1;
+	background-color: transparent;
+	color: #1eaff1;
+}
+.themebutton:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: #1eaaf1;
+	color: #fff;
+}
+#commentform input[type=text],
+#commentform input[type=email],
+#commentform input[type=password],
+#commentform input[type=search],
+#commentform textarea {
+	background-color: #fff;
+	outline: none;
+}
+.commentlist {
+	border-bottom: none;
+}
+.commentlist article {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.commentlist .comment, .commentlist .pingback {
+	margin-bottom: 20px;
+}
+.comment-respond {
+	border-bottom: none;
+}
