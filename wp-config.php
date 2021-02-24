@@ -86,7 +86,7 @@ define('DOMAIN_CURRENT_SITE', 'localhost:8080');
 define('PATH_CURRENT_SITE', '/CMS-Wordpress/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
-
+define('FS_METHOD', 'direct');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
